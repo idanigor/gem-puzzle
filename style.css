@@ -1,0 +1,115 @@
+* {
+	box-sizing: border-box;
+}
+body {
+	font-family: Arial, Helvetica, sans-serif;
+	margin: 0;
+	background-color: gray;
+}
+.wrapper-table {
+	width: 320px;
+	height: 320px;
+	background-color: bisque;
+	margin: 0 auto;
+	border: 1px solid black;
+	position: relative;
+}
+.event-off {
+	pointer-events: none;
+}
+.empty {
+	margin: 5px;
+	position: absolute;
+}
+.cell {
+	border: 1px solid black;
+	border-radius: 5px;
+	margin: 5px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-weight: 800;
+	font-size: 22px;
+	position: absolute;
+	background-color: cornflowerblue;
+	cursor: grab;
+	transition: all 0.3s;
+	color: white;
+}
+
+.hovered {
+	background-color: #d1d9e2;
+}
+.section-wrapper,
+.button-wrapper,
+.wrapper-timer,
+.wrapper-top {
+	margin: 20px auto;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 310px;
+	position: relative;
+}
+.wrapper-top {
+	flex-direction: column;
+	align-items: start;
+	font-size: 14px;
+}
+.wrapper-top span {
+	padding: 0px 20px;
+	color: wheat;
+	border: 1px solid black;
+}
+.top-label {
+	margin: 0;
+
+}
+.top-label span:nth-child(1) {
+	padding-right: 136px;
+}
+.top-label span:nth-child(2) {
+	padding-right: 37px;
+}
+.top-label span:nth-child(3) {
+	padding-right: 8px;
+}
+.top-label span {
+	padding: 0px 3px;
+}
+.button {
+	padding: 5px;
+	border-radius: 5px;
+	border: 1px solid black;
+	background-color: salmon;
+}
+#btn-start {
+	padding: 10px;
+	font-size: 24px;
+}
+.button:hover {
+	cursor: pointer;
+	color: #fff;
+}
+.button:active {
+	cursor: pointer;
+	background-color: rgb(54, 228, 86);
+}
+
+.active {
+	background-color: rgb(54, 228, 86);
+}
+.win-title {
+	width: 310px;
+	margin: 10px auto;
+	font-size: 20px;
+	text-align: center;
+	color: #ffe5c7;
+}
+.timer,
+.moves {
+	color: wheat;
+}
+.hide {
+	display: none;
+}
